@@ -1,0 +1,45 @@
+{
+  "packages": [
+	{
+          "name": "IDLab-AIRO boards",
+          "architecture": "mbed_nano",
+          "version": "1.0.0",
+          "category": "AIRO",
+          "url": "http://downloads.arduino.cc/cores/staging/ArduinoCore-mbed-nano-4.0.2.tar.bz2",
+          "archiveFileName": "ArduinoCore-mbed-nano-4.0.2.tar.bz2",
+          "checksum": "SHA-256:2d53425fa9f0e7a473e536ee0b602d4549fe6e17df1a514c5bc3f66e61d53c37",
+          "size": "6721721",
+          "boards": [
+            {
+              "name": "Halberd (I/O coupling)"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.11.0-arduino2"
+            },
+            {
+              "packager": "arduino",
+              "name": "arm-none-eabi-gcc",
+              "version": "7-2017q4"
+            },
+            {
+              "packager": "arduino",
+              "name": "bossac",
+              "version": "1.9.1-arduino2"
+            },
+            {
+              "packager": "arduino",
+              "version": "0.10.0-arduino1",
+              "name": "dfu-util"
+            },
+            {
+              "packager": "arduino",
+              "version": "1.0.6",
+              "name": "rp2040tools"
+            }
+          ]
+        }
+       }
