@@ -5,7 +5,7 @@
       	"websiteURL": "https://airo.ugent.be/",
       	"platforms": [
       	{
-          "name": "IDLab-AIRO boards",
+          "name": "IDLab-AIRO Boards",
           "architecture": "mbed_nano",
           "version": "1.0.0",
           "category": "AIRO",
