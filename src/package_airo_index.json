@@ -15,7 +15,10 @@
           "size": "7350728",
           "boards": [
             {
-              "name": "Halberd (I/O coupling)",
+              "name": "Halberd (I/O coupling)"
+            },
+            {
+            
               "name": "PolyPiezo"
             }
           ],
