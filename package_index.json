@@ -9,8 +9,8 @@
           "architecture": "mbed_nano",
           "version": "1.0.0",
           "category": "AIRO",
-          "url": "http://downloads.arduino.cc/cores/staging/ArduinoCore-mbed-nano-4.0.2.tar.bz2",
-          "archiveFileName": "ArduinoCore-mbed-nano-4.0.2.tar.bz2",
+          "url": "https://github.com/RemkoPr/airo-nrf52840-boards/archive/refs/tags/v1.0.0.tar.gz",
+          "archiveFileName": "airo-nrf52840-boards-1.0.0.tar.gz",
           "checksum": "SHA-256:3eda29c3e0db6a28f68330c79177f3f45256a463e5a26d456f4fdd90a68e8536",
           "size": "7350728",
           "boards": [
