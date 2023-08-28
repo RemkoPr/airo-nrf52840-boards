@@ -9,16 +9,15 @@
           "architecture": "mbed_nano",
           "version": "1.0.0",
           "category": "AIRO",
-          "url": "https://github.com/RemkoPr/airo-nrf52840-boards/raw/main/releases/airo-nrf52840-boards-1.0.0.tar.gz",
-          "archiveFileName": "airo-nrf52840-boards-1.0.0.tar.gz",
-          "checksum": "SHA-256:3eda29c3e0db6a28f68330c79177f3f45256a463e5a26d456f4fdd90a68e8536",
-          "size": "7350728",
+          "url": "https://github.com/RemkoPr/airo-nrf52840-boards/raw/main/releases/airo-nrf52840-boards-1.0.0.tar.xz",
+          "archiveFileName": "airo-nrf52840-boards-1.0.0.tar.xz",
+          "checksum": "SHA-256:ac6c94d960387e135276aa37f32fa744606f394548bb9866fa76c020c7db562d",
+          "size": "5181644",
           "boards": [
             {
               "name": "Halberd (I/O coupling)"
             },
             {
-            
               "name": "PolyPiezo"
             }
           ],
