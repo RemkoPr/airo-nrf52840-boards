@@ -1,3 +1,6 @@
+#########################################
+#      HALBERD (I/O COUPLING) 
+#########################################
 iocoupling.name=Halberd (I/O Coupling)
 iocoupling.build.core=arduino
 iocoupling.build.crossprefix=arm-none-eabi-
@@ -49,6 +52,9 @@ iocoupling.bootloader.extra_action.preflash=echo INFO:removed_mass-erase
 iocoupling.bootloader.config=-f target/nrf52.cfg
 iocoupling.bootloader.programmer=-f interface/cmsis-dap.cfg
 iocoupling.bootloader.file=nano33ble/bootloader.hex
+#########################################
+#              POLYPIEZO
+#########################################
 polypiezo.name=PolyPiezo
 polypiezo.build.core=arduino
 polypiezo.build.crossprefix=arm-none-eabi-
@@ -100,3 +106,57 @@ polypiezo.bootloader.extra_action.preflash=echo INFO:removed_mass-erase
 polypiezo.bootloader.config=-f target/nrf52.cfg
 polypiezo.bootloader.programmer=-f interface/cmsis-dap.cfg
 polypiezo.bootloader.file=nano33ble/bootloader.hex
+#########################################
+#            SMART TEXTILE
+#########################################
+smarttextile.name=Smart Textile
+smarttextile.build.core=arduino
+smarttextile.build.crossprefix=arm-none-eabi-
+smarttextile.build.compiler_path={runtime.tools.arm-none-eabi-gcc-7-2017q4.path}/bin/
+smarttextile.build.variant=POLY_PIEZO
+smarttextile.build.mcu=cortex-m4
+smarttextile.build.extra_flags=
+smarttextile.build.architecture=cortex-m4
+smarttextile.build.fpu=-mfpu=fpv4-sp-d16
+smarttextile.build.float-abi=-mfloat-abi=softfp
+smarttextile.build.board=SMART_TEXTILE
+smarttextile.build.ldscript=linker_script.ld
+smarttextile.compiler.mbed.arch.define=-DARDUINO_ARCH_NRF52840
+smarttextile.compiler.mbed.defines={build.variant.path}/defines.txt
+smarttextile.compiler.mbed.ldflags={build.variant.path}/ldflags.txt
+smarttextile.compiler.mbed.cflags={build.variant.path}/cflags.txt
+smarttextile.compiler.mbed.cxxflags={build.variant.path}/cxxflags.txt
+smarttextile.compiler.mbed.includes={build.variant.path}/includes.txt
+smarttextile.compiler.mbed.extra_ldflags=-lstdc++ -lsupc++ -lm -lc -lgcc -lnosys
+smarttextile.compiler.mbed="{build.variant.path}/libs/libmbed.a" "{build.variant.path}/libs/libcc_310_core.a" "{build.variant.path}/libs/libcc_310_ext.a" "{build.variant.path}/libs/libcc_310_trng.a"
+smarttextile.vid.0=0x2341
+smarttextile.pid.0=0x005a
+smarttextile.vid.1=0x2341
+smarttextile.pid.1=0x805a
+smarttextile.vid.2=0x2341
+smarttextile.pid.2=0x015a
+smarttextile.vid.3=0x2341
+smarttextile.pid.3=0x025a
+smarttextile.upload_port.0.vid=0x2341
+smarttextile.upload_port.0.pid=0x005a
+smarttextile.upload_port.1.vid=0x2341
+smarttextile.upload_port.1.pid=0x805a
+smarttextile.upload_port.2.vid=0x2341
+smarttextile.upload_port.2.pid=0x015a
+smarttextile.upload_port.3.vid=0x2341
+smarttextile.upload_port.3.pid=0x025a
+smarttextile.upload.tool=bossac
+smarttextile.upload.tool.default=bossac
+smarttextile.upload.protocol=
+smarttextile.upload.transport=
+smarttextile.upload.use_1200bps_touch=true
+smarttextile.upload.wait_for_upload_port=true
+smarttextile.upload.native_usb=true
+smarttextile.upload.maximum_size=983040
+smarttextile.upload.maximum_data_size=262144
+smarttextile.bootloader.tool=openocd
+smarttextile.bootloader.tool.default=openocd
+smarttextile.bootloader.extra_action.preflash=echo INFO:removed_mass-erase
+smarttextile.bootloader.config=-f target/nrf52.cfg
+smarttextile.bootloader.programmer=-f interface/cmsis-dap.cfg
+smarttextile.bootloader.file=nano33ble/bootloader.hex
