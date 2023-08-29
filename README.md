@@ -11,6 +11,7 @@ An enhancement of the [Robotiq I/O Coupling](https://blog.robotiq.com/robotiq-i/
 
 ## Installation
 In your Arduino IDE, go to File > Preferences. In "Additional Boards Manager URLs", paste the following link:
+
  `https://raw.githubusercontent.com/RemkoPr/airo-nrf52840-boards/main/package_airo_index.json`
  
  Restart the Arduino IDE. Go to Tools > Board > Boards Manager... and search for the "IDLab-AIRO Boards" package.
