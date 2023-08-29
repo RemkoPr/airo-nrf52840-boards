@@ -9,10 +9,10 @@
           "architecture": "mbed_nano",
           "version": "1.0.0",
           "category": "AIRO",
-          "url": "https://github.com/RemkoPr/airo-nrf52840-boards/raw/main/releases/airo-nrf52840-boards-1.0.0.tar.xz",
-          "archiveFileName": "airo-nrf52840-boards-1.0.0.tar.xz",
-          "checksum": "SHA-256:ac6c94d960387e135276aa37f32fa744606f394548bb9866fa76c020c7db562d",
-          "size": "5181644",
+          "url": "https://github.com/RemkoPr/airo-nrf52840-boards/raw/main/releases/airo-nrf52840-boards-1.0.0.tar.gz",
+          "archiveFileName": "airo-nrf52840-boards-1.0.0.tar.gz",
+          "checksum": "SHA-256:66322389dda24817973bf79421a6f4ad4c05ddc2071503f3757402580ba60be0",
+          "size": "5179904",
           "boards": [
             {
               "name": "Halberd (I/O coupling)"
