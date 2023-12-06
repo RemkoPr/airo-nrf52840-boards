@@ -13,6 +13,7 @@ The Halberd coupling ([paper](https://doi.org/10.48550/arXiv.2309.05792), [repo]
 In your Arduino IDE, go to File > Preferences. In "Additional Boards Manager URLs", paste the following link:
 
  **Linux:** `https://raw.githubusercontent.com/RemkoPr/airo-nrf52840-boards/main/package_airo_index.json`
+ 
  **Windows:** `https://raw.githubusercontent.com/RemkoPr/airo-nrf52840-boards/windows/package_airo_index.json`
  
  Restart the Arduino IDE. Go to Tools > Board > Boards Manager... and search for the "IDLab-AIRO Boards" package.
