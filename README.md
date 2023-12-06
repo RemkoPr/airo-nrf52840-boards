@@ -29,7 +29,7 @@ I copied the entire `4.0.8` folder to my repo folder and renamed it `src`. Insid
 In the `platform.txt` file, I simply changed the `name` field from "Arduino Mbed OS Nano Boards" to "IDLab AIRO Boards" and the version field from "4.0.8" to "1.0.0".
 In the `variants` folder, I delete the `NANO_RP2040_CONNECT` folder altogether and move the `ARDUINO_NANO33BLE` folder somewhere outside my repo folder. 
 
-***Adding board variants*** For any board I wish to add to my custom package, I will add a copy of the `ARDUINO_NANO33BLE` folder to the variants folder and rename it to a name of my choosing. 
+***Adding board variants*** For any board I wish to add to my custom package, I will add a copy of the `ARDUINO_NANO33BLE` folder to the `variants` folder and rename it to a name of my choosing. 
 Within the renamed `ARDUINO_NANO33BLE` folder, I edit `pins_arduino.h` and `variant.cpp` such that the mapping
 from microcontroller pins to board GPIO pins, to builtin LEDs, to I2C interfaces, etc., conforms to my physical board PCB design. Do this step by step and follow the structure of the files.
 Having added the variant, I exit the `variants` folder and open the `boards.txt` file. Here, I copy every line starting with "nano33ble.", paste it to the bottom of the file, and change every "nano33ble." I copied to
