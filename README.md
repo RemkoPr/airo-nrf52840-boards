@@ -12,15 +12,15 @@ The Halberd coupling ([paper](https://doi.org/10.48550/arXiv.2309.05792), [repo]
 ## Installation
 In your Arduino IDE, go to File > Preferences. In "Additional Boards Manager URLs", paste the following link:
 
- **Linux:** `https://raw.githubusercontent.com/RemkoPr/airo-nrf52840-boards/main/package_airo_index.json`
- 
- **Windows:** `https://raw.githubusercontent.com/RemkoPr/airo-nrf52840-boards/windows/package_airo_index.json`
+ `https://raw.githubusercontent.com/RemkoPr/airo-nrf52840-boards/main/package_airo_index.json`
  
  Restart the Arduino IDE. Go to Tools > Board > Boards Manager... and search for the "IDLab-AIRO Boards" package.
  Click Install. You can now compile code for the different IDLab-AIRO boards using the Arduino IDE, as well as upload your sketch directly if the board features a µUSB connector and the Arduino Nano 33 BLE bootloader has been flashed.
+ This was tested on Ubuntu 22 and Windows 10.
 
 ## Extra: Making your own custom Arduino board package
-To guide you in your process of providing  a quick-to)install Arduino package for your own custom board, I'll outline the steps I took to create the one in this repo as an example.
+To guide you in your process of providing  a quick-to-install Arduino package for your own custom board, I'll outline the steps I took to create the one in this repo as an example.
+The guide is written from a Windows perspective, the process is largely the same on Ubuntu.
 
 ***Starting point*** First of all, all boards in this repo feature an nrf52840 microcontroller (µC). This µC is also featured on the Arduino Nano 33 BLE. Hence, I first downloaded the Arduino Mbed OS Boards package
 (which includes support for the Arduino Nano 33 BLE) through the Arduino Boards Manager. We will use this package as a starting point.
