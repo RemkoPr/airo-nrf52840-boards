@@ -16,7 +16,7 @@ In your Arduino IDE, go to File > Preferences. In "Additional Boards Manager URL
  
  Restart the Arduino IDE. Go to Tools > Board > Boards Manager... and search for the "IDLab-AIRO Boards" package.
  Click Install. You can now compile code for the different IDLab-AIRO boards using the Arduino IDE, as well as upload your sketch directly if the board features a µUSB connector and the Arduino Nano 33 BLE bootloader has been flashed.
- This was tested on Ubuntu 22 and Windows 10.
+ This was tested on Ubuntu 22.04 and Windows 10.
 
 ## Extra: Making your own custom Arduino board package
 To guide you in your process of providing  a quick-to-install Arduino package for your own custom board, I'll outline the steps I took to create the one in this repo as an example.
