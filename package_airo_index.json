@@ -11,8 +11,8 @@
           "category": "AIRO",
           "url": "https://github.com/RemkoPr/airo-nrf52840-boards/raw/windows/releases/airo-nrf52840-boards-1.0.0.zip",
           "archiveFileName": "airo-nrf52840-boards-1.0.0.zip",
-          "checksum": "SHA-256:CD27BD1F6FA568894C6A886E2B59211442448FB59E4DA991B418845C793E9CD0",
-          "size": "17700370",
+          "checksum": "SHA-256:b2a51e9cea7eeedb967f5885c2e34a5effc76530c0cde23f9547ed68879c4218",
+          "size": "17492322",
           "boards": [
             {
               "name": "Halberd (I/O coupling)"

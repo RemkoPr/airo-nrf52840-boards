@@ -114,14 +114,14 @@ static const uint8_t MISO = PIN_SPI_MISO;
 static const uint8_t SCK  = PIN_SPI_SCK;
 
 // Wire
-#define PIN_WIRE1_SDA        (10u)
-#define PIN_WIRE1_SCL        (11u)
+#define PIN_WIRE_SDA        (10u)
+#define PIN_WIRE_SCL        (11u)
 
-#define PIN_WIRE2_SDA       (8u)
-#define PIN_WIRE2_SCL       (9u)
+#define PIN_WIRE1_SDA       (8u)
+#define PIN_WIRE1_SCL       (9u)
 
-#define PIN_ENABLE_I2C1_PULLUP      (26u)
-#define PIN_ENABLE_I2C2_PULLUP      (27u)
+#define PIN_ENABLE_I2C_PULLUP      (26u)
+#define PIN_ENABLE_I2C1_PULLUP      (27u)
 
 // These serial port names are intended to allow libraries and architecture-neutral
 // sketches to automatically default to the correct port name for a particular type
@@ -159,10 +159,10 @@ static const uint8_t SCK  = PIN_SPI_SCK;
 
 #define WIRE_HOWMANY		2
 
-#define I2C1_SDA				(digitalPinToPinName(PIN_WIRE1_SDA))
-#define I2C1_SCL				(digitalPinToPinName(PIN_WIRE1_SCL))
-#define I2C2_SDA1			(digitalPinToPinName(PIN_WIRE2_SDA))
-#define I2C2_SCL1			(digitalPinToPinName(PIN_WIRE2_SCL))
+#define I2C_SDA				(digitalPinToPinName(PIN_WIRE_SDA))
+#define I2C_SCL				(digitalPinToPinName(PIN_WIRE_SCL))
+#define I2C_SDA1			(digitalPinToPinName(PIN_WIRE1_SDA))
+#define I2C_SCL1			(digitalPinToPinName(PIN_WIRE1_SCL))
 
 #define SPI_HOWMANY			1
 
