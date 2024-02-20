@@ -1,5 +1,4 @@
 #pragma once
-#include "mbed_config.h"
 #include <stdint.h>
 #include <macros.h>
 
@@ -23,6 +22,8 @@ extern "C" unsigned int PINCOUNT_fn();
 #define NUM_DIGITAL_PINS     (21u)
 #define NUM_ANALOG_INPUTS    (7u)
 #define NUM_ANALOG_OUTPUTS   (0u)
+
+extern PinName digitalPinToPinName(pin_size_t P);
 
 // Analog pins
 // -----------

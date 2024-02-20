@@ -1,31 +1,43 @@
 #include "Arduino.h"
+#include "pinDefinitions.h"
+
+AnalogPinDescription g_AAnalogPinDescription[] = {
+  // A0 - A6
+  {P0_3,  NULL},    // A0
+  {P0_28,  NULL},    // A1
+  {P0_2, NULL},    // A2
+  {P0_31, NULL},    // A3
+  {P0_29, NULL},    // A4
+  {P0_30,  NULL},    // A5
+  {P0_4, NULL},    // A6
+};
 
 PinDescription g_APinDescription[] = {
 
   // D0 - D6
-  P0_23, NULL, NULL,     // D0
-  P0_21, NULL, NULL,     // D1
-  P0_22,  NULL, NULL,     // D2
-  P0_19,  NULL, NULL,     // D3
-  P0_13,  NULL, NULL,     // D4
-  P0_14, NULL, NULL,     // D5
-  P0_15, NULL, NULL,     // D6
+  {P0_23, NULL, NULL, NULL},    // D0
+  {P0_21, NULL, NULL, NULL},    // D1
+  {P0_22,  NULL, NULL, NULL},    // D2
+  {P0_19,  NULL, NULL, NULL},    // D3
+  {P0_13,  NULL, NULL, NULL},    // D4
+  {P0_14, NULL, NULL, NULL},    // D5
+  {P0_15, NULL, NULL, NULL},    // D6
 
   // A0 - A6
-  P0_3,  NULL, NULL,     // A0
-  P0_28,  NULL, NULL,     // A1
-  P0_2, NULL, NULL,     // A2
-  P0_31, NULL, NULL,     // A3
-  P0_29, NULL, NULL,     // A4
-  P0_30,  NULL, NULL,     // A5
-  P0_4, NULL, NULL,     // A6
+  {P0_3,  NULL, NULL, NULL},    // A0
+  {P0_28,  NULL, NULL, NULL},    // A1
+  {P0_2, NULL, NULL, NULL},    // A2
+  {P0_31, NULL, NULL, NULL},    // A3
+  {P0_29, NULL, NULL, NULL},    // A4
+  {P0_30,  NULL, NULL, NULL},    // A5
+  {P0_4, NULL, NULL, NULL},    // A6
 
   // I2C
-  P0_20, NULL, NULL,     // SDA
-  P0_17, NULL, NULL,     // SCL
+  {P0_20, NULL, NULL, NULL},    // SDA
+  {P0_17, NULL, NULL, NULL},    // SCL
 
   // Low battery detector pin
-  P0_5, NULL, NULL,		// LB
+  {P0_5, NULL, NULL, NULL}	// LB
 };
 
 extern "C" {
