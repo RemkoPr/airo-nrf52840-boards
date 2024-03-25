@@ -60,6 +60,11 @@ static const uint8_t LB = PIN_LB;
 // Wire
 #define PIN_WIRE_SDA        (14u)
 #define PIN_WIRE_SCL        (15u)
+// SPI, not included currently, but defined so that libraries including SPI communication can compile
+#define PIN_SPI_MISO  
+#define PIN_SPI_MOSI  
+#define PIN_SPI_SCK   
+#define PIN_SPI_SS    
 
 // These serial port names are intended to allow libraries and architecture-neutral
 // sketches to automatically default to the correct port name for a particular type
@@ -88,8 +93,14 @@ static const uint8_t LB = PIN_LB;
 
 #define DFU_MAGIC_SERIAL_ONLY_RESET   0xb0
 
+#define WIRE_HOWMANY			1
 #define I2C_SDA				(digitalPinToPinName(PIN_WIRE_SDA))
 #define I2C_SCL				(digitalPinToPinName(PIN_WIRE_SCL))
+
+#define SPI_HOWMANY			1 // Actually none, but set so that libraries including SPI communication can compile
+#define SPI_MISO			999//(digitalPinToPinName(PIN_SPI_MISO))
+#define SPI_MOSI			999//(digitalPinToPinName(PIN_SPI_MOSI))
+#define SPI_SCK				999//(digitalPinToPinName(PIN_SPI_SCK))
 
 #define digitalPinToPort(P)		(digitalPinToPinName(P)/32)
 
