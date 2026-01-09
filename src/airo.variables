@@ -1,5 +1,5 @@
 export FLAVOUR="airo"
-export VARIANTS=("IO_COUPLING POLY_PIEZO SMART_TEXTILE")
-export FQBNS=("iocoupling polypiezo smarttextile")
+export VARIANTS=("IO_COUPLING HALBERD_V2 POLY_PIEZO SMART_TEXTILE")
+export FQBNS=("iocoupling halberd_v2 polypiezo smarttextile")
 export LIBRARIES=("PDM SPI Wire MRI USBHID USBMSD ThreadDebug Scheduler SFU Nano33BLE_System SocketWrapper MLC")
 export BOOTLOADERS=("nano33ble")

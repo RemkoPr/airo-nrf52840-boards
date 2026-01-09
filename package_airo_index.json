@@ -7,15 +7,18 @@
       	{
           "name": "IDLab-AIRO Boards",
           "architecture": "mbed_nano",
-          "version": "1.0.0",
+          "version": "1.1.0",
           "category": "AIRO",
-          "url": "https://github.com/RemkoPr/airo-nrf52840-boards/raw/main/releases/airo-nrf52840-boards-1.0.0.zip",
-          "archiveFileName": "airo-nrf52840-boards-1.0.0.zip",
-          "checksum": "SHA-256:b2a51e9cea7eeedb967f5885c2e34a5effc76530c0cde23f9547ed68879c4218",
-          "size": "17492322",
+          "url": "https://github.com/RemkoPr/airo-nrf52840-boards/raw/main/releases/airo-nrf52840-boards-1.1.0.zip",
+          "archiveFileName": "airo-nrf52840-boards-1.1.0.zip",
+          "checksum": "SHA-256:fbda44af6b071c01de5b2b14033f60d87f8b39bfcb08d740ce6b967908d34e58",
+          "size": "15303273",
           "boards": [
             {
               "name": "Halberd (I/O coupling)"
+            },
+            {
+              "name": "AIRO Halberd v2"
             },
             {
               "name": "PolyPiezo"
