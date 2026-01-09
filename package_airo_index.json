@@ -54,6 +54,54 @@
               "name": "rp2040tools"
             }
           ]
+        },
+        {
+          "name": "IDLab-AIRO Boards",
+          "architecture": "mbed_nano",
+          "version": "1.0.0",
+          "category": "AIRO",
+          "url": "https://github.com/RemkoPr/airo-nrf52840-boards/raw/main/releases/airo-nrf52840-boards-1.0.0.zip",
+          "archiveFileName": "airo-nrf52840-boards-1.0.0.zip",
+          "checksum": "SHA-256:b2a51e9cea7eeedb967f5885c2e34a5effc76530c0cde23f9547ed68879c4218",
+          "size": "17492322",
+          "boards": [
+            {
+              "name": "Halberd (I/O coupling)"
+            },
+            {
+              "name": "PolyPiezo"
+            },
+            {
+              "name": "Smart Textile"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.11.0-arduino2"
+            },
+            {
+              "packager": "arduino",
+              "name": "arm-none-eabi-gcc",
+              "version": "7-2017q4"
+            },
+            {
+              "packager": "arduino",
+              "name": "bossac",
+              "version": "1.9.1-arduino2"
+            },
+            {
+              "packager": "arduino",
+              "version": "0.10.0-arduino1",
+              "name": "dfu-util"
+            },
+            {
+              "packager": "arduino",
+              "version": "1.0.6",
+              "name": "rp2040tools"
+            }
+          ]
         }
       ]
     }
