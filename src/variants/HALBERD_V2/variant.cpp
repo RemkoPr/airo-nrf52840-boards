@@ -149,6 +149,16 @@ void rainbowRGB() {
     }
     delay(10);
   }
+  // Remove pwmOut objects to free up PWM channels
+  analogWrite(LED_R, -1);
+  analogWrite(LED_G, -1);
+  analogWrite(LED_B, -1);
+
+  // Ensure pins are back to GPIO low
+  pinMode(LED_R, OUTPUT);
+  pinMode(LED_G, OUTPUT);
+  pinMode(LED_B, OUTPUT);
+  
   digitalWrite(LED_R, LOW);
   digitalWrite(LED_G, LOW);
   digitalWrite(LED_B, LOW);
