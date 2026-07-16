@@ -1,4 +1,9 @@
+/*
+ * This test SHOULD freeze after printing "Setting pin A4": the Arduino Nano 33 BLE also only allows 4x analogWrite()
+ * 
+ */
 #define NUM_ANALOG_PINS 8
+
 
 
 int analog_pins[NUM_ANALOG_PINS] = {A0, A1, A2, A3, A4, A5, A6, A7};
